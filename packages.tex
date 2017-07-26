@@ -1,0 +1,33 @@
+% Pacotes usados neste documento e suas respectivas configurações
+
+% seleção de línguas do texto (a última é a principal/default)
+\usepackage[english,brazilian]{babel}
+
+% ------------------------------------------------------------------------------
+% Definição de fontes
+
+% formato dos arquivos-fonte (utf8 no Linux e latin1 no Windows)
+\usepackage[utf8]{inputenc}	% arquivos LaTeX em Unicode (UTF8)
+
+% usar codificação T1 para ter caracteres acentuados corretos no PDF
+\usepackage[T1]{fontenc}
+
+% fonte usada no corpo do texto (descomente apenas uma)
+%\usepackage{newtxtext,newtxmath}	% Times (se não tiver, use mathptmx)
+%\usepackage{lmodern}			% Computer Modern (fonte clássico LaTeX)
+%\usepackage{kpfonts}			% Kepler/Palatino (idem, use mathpazo)
+%\renewcommand{\familydefault}{\sfdefault} % Arial/Helvética (leia abaixo)
+
+% A biblioteca central da UFPR recomenda usar Arial, seguindo a recomendação da
+% ABNT. Essa é uma escolha ruim, pois fontes sans-serif são geralmente inade-
+% quados para textos longos e impressos, sendo melhores para páginas Web.
+% http://www.webdesignerdepot.com/2013/03/serif-vs-sans-the-final-battle/.
+
+% fontes usadas em ambientes específicos
+\usepackage[scaled=0.9]{helvet}		% Sans Serif
+\usepackage{courier}			% Verbatim, Listings, etc
+
+% ------------------------------------------------------------------------------
+
+% inclusão de figuras
+\usepackage{graphicx}			% incluir figuras em PDF, PNG, PS, EPS
